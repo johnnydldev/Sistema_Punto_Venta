@@ -1,0 +1,130 @@
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVenta.exe.config
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVenta.exe
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVenta.pdb
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmLogin.resources
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmMenu.resources
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Properties.Resources.resources
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.exe
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.pdb
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaEntidad.dll
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaNegocio.dll
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaDatos.dll
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaEntidad.pdb
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaNegocio.pdb
+D:\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaDatos.pdb
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmUsuarios.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmLogin.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmUsuarios.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmMenu.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Properties.Resources.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaEntidad.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaNegocio.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaDatos.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaEntidad.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaNegocio.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaDatos.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmCategoria.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmProductos.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\ClosedXML.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\ExcelNumberFormat.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\Irony.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\SixLabors.Fonts.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Buffers.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.IO.Packaging.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Memory.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.ValueTuple.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\XLParser.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmClientes.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmProveedores.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmNegocio.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmCompras.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdProveedor.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdProductos.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmDetalleCompra.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\itextsharp.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdCompra.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmVentas.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdCliente.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmDetalleVentas.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdVenta.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmReporteCompra.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmReporteVenta.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmAcercaDe.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmInventario.resources
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVentaAppvance.exe.config
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVentaAppvance.exe
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVentaAppvance.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.exe.config
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.exe
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVentaAppvance.exe.config
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVentaAppvance.exe
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\PuntoVentaAppvance.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\ClosedXML.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\ExcelNumberFormat.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\Irony.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\itextsharp.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\SixLabors.Fonts.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Buffers.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.IO.Packaging.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Memory.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\System.ValueTuple.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\XLParser.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaEntidad.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaNegocio.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaDatos.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaEntidad.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaNegocio.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\bin\Debug\CapaDatos.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.exe.config
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmAcercaDe.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmCategoria.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmClientes.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmCompras.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmDetalleCompra.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmDetalleVentas.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmInventario.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmLogin.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmNegocio.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmProductos.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmProveedores.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmReporteCompra.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmReporteVenta.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmUsuarios.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmVentas.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmMenu.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdCliente.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdCompra.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdProductos.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdProveedor.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdVenta.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Properties.Resources.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.exe
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.frmReporteVenta_Usuario.resources
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Modal.mdRespuesta.resources

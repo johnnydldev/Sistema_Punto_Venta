@@ -1,0 +1,33 @@
+D:\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaEntidad.dll
+D:\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaEntidad.pdb
+D:\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaNegocio\obj\Debug\CapaNegocio.pdb

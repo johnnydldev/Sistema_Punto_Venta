@@ -1,0 +1,18 @@
+D:\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\C#\SistemaDeVenta\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\C#\SistemaDeVenta\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\yonid\Documents\Proyectos C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\yonid\OneDrive\Documentos\C#\SistemaDeVenta\CapaEntidad\obj\Debug\CapaEntidad.pdb
