@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B359962C-6AFF-420F-B306-EBFEED7CD7AA}|PuntoVenta\\CapaPresentacion.csproj|c:\\users\\johnnydl\\documents\\proyectos c#\\punto de venta\\sistemadeventa_v_1.1.4\\sistemadeventa\\puntoventa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B359962C-6AFF-420F-B306-EBFEED7CD7AA}|PuntoVenta\\CapaPresentacion.csproj|solutionrelative:puntoventa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CapaPresentacion||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CapaPresentacion",
+              "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\CapaPresentacion.csproj",
+              "RelativeDocumentMoniker": "PuntoVenta\\CapaPresentacion.csproj",
+              "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\CapaPresentacion.csproj",
+              "RelativeToolTip": "PuntoVenta\\CapaPresentacion.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-30T21:44:47.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\Program.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\Program.cs",
+              "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\Program.cs",
+              "RelativeToolTip": "PuntoVenta\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T20:45:44.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

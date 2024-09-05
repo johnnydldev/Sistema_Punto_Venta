@@ -2173,24 +2173,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yonid\\.nuget\\packages\\": {},
+    "C:\\Users\\JohnnyDL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\PuntoVenta\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\CapaPresentacion.csproj",
       "projectName": "PuntoVentaAppvance",
-      "projectPath": "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\PuntoVenta\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\yonid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\PuntoVenta\\obj\\",
+      "projectPath": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\JohnnyDL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\PuntoVenta\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\yonid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JohnnyDL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2204,14 +2204,19 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\yonid\\OneDrive\\Documentos\\C#\\SistemaDeVenta\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\JohnnyDL\\Documents\\Proyectos C#\\Punto de venta\\SistemaDeVenta_V_1.1.4\\SistemaDeVenta\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
