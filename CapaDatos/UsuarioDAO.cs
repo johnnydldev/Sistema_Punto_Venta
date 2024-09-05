@@ -13,11 +13,55 @@ namespace CapaDatos
 {
     public class UsuarioDAO
     {
+        SqlConnection objConexion = new SqlConnection(Conexion.cadena);
+        public Usuario searchUser(string nickname, string password)
+        {
+            Usuario user = new Usuario();
+
+            using (objConexion)
+            {
+                try
+                {
+                   
+                    SqlCommand cmd = new SqlCommand("sp_searchUser", objConexion);
+                    cmd.Parameters.AddWithValue("nickname", nickname);
+                    cmd.Parameters.AddWithValue("password", password);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    objConexion.Open();
+                    cmd.ExecuteNonQuery();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            user = new Usuario()
+                            {
+                                idUsuario = Convert.ToInt32(reader["idUsuario"]),
+                                documento = reader["documento"].ToString(),
+                                apodo = reader["apodo"].ToString(),
+                                nombre = reader["nombre"].ToString(),
+                                correo = reader["correo"].ToString(),
+                                clave = reader["contraseña"].ToString(),
+                                estado = Convert.ToBoolean(reader["estado"]),
+                                objRol = new Rol() { idRol = Convert.ToInt32(reader["idRol"]), descripcion = reader["descripcion"].ToString() }
+                            };
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    string msg = ex.Message;
+                    user = new Usuario();
+                }
+            }
+            return user;
+        }//Termina metodo buscar Usuario Login
+
         public List<Usuario> listar()
         {
             List<Usuario> lista = new List<Usuario>();
 
-            using (SqlConnection objConexion = new SqlConnection(Conexion.cadena))
+            using (objConexion)
             {
                 try
                 {
@@ -52,17 +96,18 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    string msg = ex.Message;
                     lista = new List<Usuario>();
                 }
             }
             return lista;
-        }//Termina metodoo listar Usuarios
+        }//Termina metodo listar Usuarios
 
         public int obtenerIdMax()
         {
             int id = 0;
 
-            using (SqlConnection objConexion = new SqlConnection(Conexion.cadena))
+            using (objConexion)
             {
                 try
                 {
@@ -83,6 +128,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    string msg = ex.Message;
                     id = 0;
 
                 }
@@ -102,7 +148,7 @@ namespace CapaDatos
 
             try
             {
-                using (SqlConnection objConexion = new SqlConnection(Conexion.cadena))
+                using (objConexion)
                 {
 
 
@@ -149,7 +195,7 @@ namespace CapaDatos
 
             try
             {
-                using (SqlConnection objConexion = new SqlConnection(Conexion.cadena))
+                using (objConexion)
                 {
 
 
@@ -197,7 +243,7 @@ namespace CapaDatos
 
             try
             {
-                using (SqlConnection objConexion = new SqlConnection(Conexion.cadena))
+                using (objConexion)
                 {
 
 

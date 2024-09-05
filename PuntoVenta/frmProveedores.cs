@@ -20,11 +20,45 @@ namespace PuntoVenta
         ER_Metodos expresion = new ER_Metodos();
         public frmProveedores()
         {
-            InitializeComponent();
-        }
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
 
+       
+        InitializeComponent();
+        }
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
+        }
         private void frmProveedores_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.gbtnOpciones.Cursor = _customCutCursor;
+            this.btnLimpiar.Cursor = _customHandCursor;
+            this.btnAgregar.Cursor = _customHandCursor;
+            this.btnActualizar.Cursor = _customHandCursor;
+            this.btnEliminar.Cursor = _customHandCursor;
+            this.btnGenerarDocumento.Cursor = _customHandCursor;
+            this.btnLimpiarCasillas.Cursor = _customHandCursor;
+            this.btnBuscar.Cursor = _customHandCursor;
+            this.cboBuscar.Cursor = _customHandCursor;
+            this.cboEstado.Cursor = _customHandCursor;
+            this.dgvUserData.Cursor = _customHandCursor;
+            this.txtBuscar.Cursor = _customCaretCursor;
+            this.txtCorreo.Cursor = _customCaretCursor;
+            this.txtDocumento.Cursor = _customCaretCursor;
+            this.txtNombre.Cursor = _customCaretCursor;
+            this.txtTelefono.Cursor = _customCaretCursor;
+
+
             txtId.Text = Convert.ToString(new CN_Proveedor().obtenerId());
             txtId.Visible = false;
             btnActualizar.Enabled = false;

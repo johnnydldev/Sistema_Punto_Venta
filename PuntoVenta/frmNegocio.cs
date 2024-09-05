@@ -17,9 +17,16 @@ namespace PuntoVenta
     {
         public frmNegocio()
         {
-            InitializeComponent();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+      
+        InitializeComponent();
         }
 
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
+        }
         public Image convertirImagen(byte[] bytesImagen)
         {
             MemoryStream stream = new MemoryStream();
@@ -31,6 +38,24 @@ namespace PuntoVenta
         }
         private void frmNegocio_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.btnCargarImagen.Cursor = _customHandCursor;
+            this.btnGuardar.Cursor = _customHandCursor;
+            this.txtDireccion.Cursor = _customCaretCursor;
+            this.txtNombreN.Cursor = _customCaretCursor;
+            this.txtRFC.Cursor = _customCaretCursor;
+            gbtnOpciones.Cursor = _customCutCursor;
+
+
             bool resultado = true;
 
             byte[] bytesImagen = new CN_Negocio().obtenerLogo(out resultado);

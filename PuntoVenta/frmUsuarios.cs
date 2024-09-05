@@ -22,11 +22,45 @@ namespace PuntoVenta
         ER_Metodos expresion = new ER_Metodos();
         public frmUsuarios()
         {
-            InitializeComponent();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+       
+        InitializeComponent();
         }
 
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
+        }
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.btnLimpiar.Cursor = _customHandCursor;
+            this.btnBuscar.Cursor = _customHandCursor;
+            this.btnGenerarDocumento.Cursor = _customHandCursor;
+            this.btnActualizar.Cursor = _customHandCursor;
+            this.btnAgregar.Cursor = _customHandCursor;
+            this.btnEliminar.Cursor = _customHandCursor;
+            this.dgvUserData.Cursor = _customHandCursor;
+            this.cboBuscar.Cursor = _customHandCursor;
+            this.cbxEstado.Cursor = _customHandCursor;
+            this.cbxRol.Cursor = _customHandCursor;
+            this.txtDocumento.Cursor = _customCaretCursor;
+            this.txtNombre.Cursor = _customCaretCursor;
+            this.txtApodo.Cursor = _customCaretCursor;
+            this.txtCorreo.Cursor = _customCaretCursor;
+            this.txtConfirmarContraseña.Cursor = _customCaretCursor;
+            this.txtContraseña.Cursor = _customCaretCursor;
+            this.txtBuscar.Cursor = _customCaretCursor;
 
             txtId.Text = Convert.ToString(new CN_Usuario().obtenerId());
             txtId.Visible = false;
@@ -67,6 +101,14 @@ namespace PuntoVenta
             cboBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
             //Mostrar Los datos de los usuarios en la tabla
+            cargarTabla();
+
+
+        }//termina evento load
+
+        private void cargarTabla()
+        {
+            //Mostrar Los datos de los usuarios en la tabla
             List<Usuario> listUsuario = new CN_Usuario().listar();
 
             foreach (Usuario item in listUsuario)
@@ -86,9 +128,7 @@ namespace PuntoVenta
                 item.estado == true ? "Activo" : "Inactivo"
             });
             }
-           
-        }//termina evento load
-
+        }//Termina cagar tabla
         private void limpiarOpciones()
         {
             lblIndiceTabla.Text = "-1";
@@ -104,8 +144,9 @@ namespace PuntoVenta
             cbxEstado.SelectedIndex = 0;
             btnAgregar.Enabled = true;
             btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
 
-        }
+        }//Termina metodo limpiar opciones
         private void restaurarComponentes()
         {
             txtApodo.BackColor = System.Drawing.Color.White;
@@ -115,11 +156,11 @@ namespace PuntoVenta
             txtContraseña.BackColor = System.Drawing.Color.White;
             txtCorreo.BackColor = System.Drawing.Color.White;
             txtBuscar.BackColor = System.Drawing.Color.White;
-        }
-        private bool estadoBandera(int n)
+        }//termina restaurar componentes
+        private bool estadoBandera()
         {
             int valor = 0;
-            valor = n;
+            valor = Convert.ToInt32(((OpcionCombo)cbxEstado.SelectedItem).valor);
             bool estadoBandera = false;
 
             if (valor == 1)
@@ -133,10 +174,9 @@ namespace PuntoVenta
             else
             {
                 MessageBox.Show("Valores enviados, verifique los datos.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
             return estadoBandera;
-        }
+        }//termina estado bandera
         
         public bool validarCampos()
         {
@@ -206,18 +246,10 @@ namespace PuntoVenta
 
             string mensaje = string.Empty;
 
-            bool estado = estadoBandera(Convert.ToInt32(((OpcionCombo)cbxEstado.SelectedItem).valor));
-            bool rol = estadoBandera(Convert.ToInt32(((OpcionCombo)cbxRol.SelectedItem).valor));
-            int rolValor = 0;
-            if(rol == false)
-            {
-                rolValor = 0;
-            }
-            else if(rol == true)
-            {
-                rolValor = 1;
-            }
-            else
+            bool estado = estadoBandera();
+            int rolValor = Convert.ToInt32(((OpcionCombo)cbxRol.SelectedItem).valor);
+           
+            if(rolValor != 1 || rolValor != 0)
             {
                 MessageBox.Show("Rol no valido", "Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -243,22 +275,10 @@ namespace PuntoVenta
 
                 if (usuarioGenerado != 0)
                 {
-                    dgvUserData.Rows.Add(new object[]
-                    {
-                    "",
-                    txtId.Text,
-                    txtDocumento.Text,
-                    txtApodo.Text,
-                    txtNombre.Text,
-                    txtCorreo.Text,
-                    txtContraseña.Text,
-                    ((OpcionCombo) cbxRol.SelectedItem).valor.ToString(),
-                    ((OpcionCombo) cbxRol.SelectedItem).texto.ToString(),
-                    ((OpcionCombo) cbxEstado.SelectedItem).valor.ToString(),
-                    ((OpcionCombo) cbxEstado.SelectedItem).texto.ToString()
-                    });
                     limpiarOpciones();
                     restaurarComponentes();
+                    dgvUserData.Rows.Clear();
+                    cargarTabla();
                 }
                 else
                 {
@@ -299,11 +319,14 @@ namespace PuntoVenta
 
                         if (resultado)
                         {
-                            dgvUserData.Rows.RemoveAt(Convert.ToInt32(lblIndiceTabla.Text));
                             limpiarOpciones();
                             btnAgregar.Enabled = true;
                             btnEliminar.Enabled = false;
                             btnActualizar.Enabled = false;
+
+                            dgvUserData.Rows.Clear();
+                            cargarTabla();
+                        
                         }
                         else
                         {
@@ -319,7 +342,7 @@ namespace PuntoVenta
         {
             string mensaje = string.Empty;
 
-            bool estado = estadoBandera(Convert.ToInt32(((OpcionCombo)cbxRol.SelectedItem).valor.ToString()));
+            bool estado = estadoBandera();
 
             bool validacion = validarCampos();
 
@@ -340,20 +363,11 @@ namespace PuntoVenta
 
                 if (resultado)
                 {
-                    DataGridViewRow fila = dgvUserData.Rows[Convert.ToInt32(lblIndiceTabla.Text)];
-                    fila.Cells["idUsuario"].Value = txtId.Text;
-                    fila.Cells["documento"].Value = txtDocumento.Text;
-                    fila.Cells["apodo"].Value = txtApodo.Text;
-                    fila.Cells["nombre"].Value = txtNombre.Text;
-                    fila.Cells["correo"].Value = txtCorreo.Text;
-                    fila.Cells["contrasenia"].Value = txtContraseña.Text;
-                    fila.Cells["idRol"].Value = ((OpcionCombo)cbxRol.SelectedItem).valor.ToString();
-                    fila.Cells["Rol"].Value = ((OpcionCombo)cbxRol.SelectedItem).texto.ToString();
-                    fila.Cells["estadoValor"].Value = ((OpcionCombo)cbxEstado.SelectedItem).valor.ToString();
-                    fila.Cells["estado"].Value = ((OpcionCombo)cbxEstado.SelectedItem).texto.ToString();
-                    limpiarOpciones();
-                    restaurarComponentes();
+                   limpiarOpciones();
+                   restaurarComponentes();
 
+                    dgvUserData.Rows.Clear();
+                    cargarTabla();
                 }
                 else
                 {
@@ -362,9 +376,7 @@ namespace PuntoVenta
 
             }
 
-
-
-        }
+        }//Termina metodo actualizar
 
         private void btnGenerarDocumento_Click(object sender, EventArgs e)
         {

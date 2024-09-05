@@ -11,12 +11,13 @@ namespace CapaNegocio
     public  class CN_Usuario
     {
         private UsuarioDAO objUsuarioDAO = new UsuarioDAO();
-        
 
+        public Usuario searchUser(string nickname, string password)
+        {
+            return objUsuarioDAO.searchUser(nickname, password);
+        }
         public List<Usuario> listar()
         {
-           
-
             return objUsuarioDAO.listar();
         }//Termina Metodo Listar
 

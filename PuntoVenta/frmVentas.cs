@@ -29,14 +29,47 @@ namespace PuntoVenta
         ER_Metodos expresion = new ER_Metodos();
         public frmVentas(Usuario objUsuario = null)
         {
-            usuario = objUsuario;
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+       
+        usuario = objUsuario;
             InitializeComponent();
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
         }
 
         private void frmVentas_Load(object sender, EventArgs e)
         {
-            
-            
+            System.Windows.Forms.Cursor _customCutCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.btnAgregar.Cursor = _customHandCursor;
+            this.btnEditar.Cursor = _customHandCursor;
+            this.btnEliminar_2.Cursor = _customHandCursor;
+            this.btnRegistrar.Cursor = _customHandCursor;
+            this.btnBuscarProducto.Cursor = _customHandCursor;
+            this.btnBuscarCliente.Cursor = _customHandCursor;
+            this.cboTipoDocumento.Cursor = _customHandCursor;
+            this.txtCantidad.Cursor = _customCaretCursor;
+            this.txtCambio.Cursor = _customCaretCursor;
+            this.txtNombreProducto.Cursor = _customCaretCursor;
+            this.txtPago.Cursor = _customCaretCursor;
+            this.txtPrecioVenta.Cursor = _customCaretCursor;
+            this.txtTotalPagar.Cursor = _customCaretCursor;
+            this.txtCodigoProducto.Cursor = _customCaretCursor;
+            this.txtStock.Cursor = _customCaretCursor;
+            this.dgvUserData.Cursor = _customHandCursor;
+
             cboTipoDocumento.Items.Add(new OpcionCombo() { valor = "Recibo", texto = "Recibo" });
             cboTipoDocumento.Items.Add(new OpcionCombo() { valor = "Factura", texto = "Factura" });
             cboTipoDocumento.DisplayMember = "texto";

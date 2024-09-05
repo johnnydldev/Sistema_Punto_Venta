@@ -25,7 +25,15 @@ namespace PuntoVenta
 
         public frmDetalleCompra()
         {
-            InitializeComponent();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+       
+        InitializeComponent();
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -71,6 +79,23 @@ namespace PuntoVenta
 
         private void frmDetalleCompra_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.btnLimpiar.Cursor = _customHandCursor;
+            this.btnBuscar.Cursor = _customHandCursor;
+            this.btnDescargarPDF.Cursor = _customHandCursor;
+            this.dgvUserData.Cursor = _customHandCursor;
+            this.txtDocumentoCompra.Cursor = _customCaretCursor;
+
+
             txtDocumentoProveedor.Enabled = false;
             txtFecha.Enabled = false;
             txtRazonSocial.Enabled = false;

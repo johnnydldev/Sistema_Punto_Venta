@@ -51,6 +51,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    string msg = ex.Message;
                     lista = new List<Producto>();
                 }
             }
@@ -82,6 +83,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    string msg = ex.Message;
                     id = 0;
 
                 }
@@ -103,8 +105,6 @@ namespace CapaDatos
             {
                 using (SqlConnection objConexion = new SqlConnection(Conexion.cadena))
                 {
-
-
 
                     SqlCommand cmd = new SqlCommand("sp_RegistrarProducto", objConexion);
                     cmd.Parameters.AddWithValue("codigo", obj.codigo);

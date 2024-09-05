@@ -17,11 +17,32 @@ namespace PuntoVenta
     {
         public frmInventario()
         {
-            InitializeComponent();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+        
+        InitializeComponent();
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
         }
 
         private void frmInventario_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.btnGenerarExcel.Cursor = _customHandCursor;
+            this.dgvUserData.Cursor = _customHandCursor;
+
             List<Producto> list = new CN_Producto().listar();
 
             foreach (Producto item in list)

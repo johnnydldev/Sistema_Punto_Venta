@@ -17,11 +17,40 @@ namespace PuntoVenta
     {
         public frmReporteCompra()
         {
-            InitializeComponent();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+       
+        InitializeComponent();
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
         }
 
         private void frmReporteCompra_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.txtBuscar.Cursor = _customCaretCursor;
+
+            this.btnLimpiar.Cursor = _customHandCursor;
+            this.btnBuscar.Cursor = _customHandCursor;
+            this.btnListar.Cursor = _customHandCursor;
+            this.btnDescargarExcel.Cursor = _customHandCursor;
+            this.dgvData.Cursor = _customHandCursor;
+            this.cboBuscar.Cursor = _customHandCursor;
+            this.dateFechaFinal.Cursor = _customHandCursor;
+            this.dateFechaInicio.Cursor = _customHandCursor;
+
             foreach  (DataGridViewColumn columna in dgvData.Columns)
             {
                 cboBuscar.Items.Add(new OpcionCombo() { valor = columna.Name, texto = columna.HeaderText });

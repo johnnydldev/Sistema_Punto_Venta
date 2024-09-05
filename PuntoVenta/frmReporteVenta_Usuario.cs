@@ -19,11 +19,36 @@ namespace PuntoVenta
     {
         public frmReporteVenta_Usuario()
         {
-            InitializeComponent();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
+       
+        InitializeComponent();
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Transparent, e.ClipRectangle);
         }
 
         private void frmReporteVenta_Usuario_Load(object sender, EventArgs e)
         {
+            System.Windows.Forms.Cursor _customCutCursor =
+                new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customCaretCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+            System.Windows.Forms.Cursor _customHandCursor =
+                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
+            this.Cursor = _customCutCursor;
+            this.btnListar.Cursor = _customHandCursor;
+            this.btnDescargarExcel.Cursor = _customHandCursor;
+            this.dgvData.Cursor = _customHandCursor;
+            this.cboBuscar.Cursor = _customHandCursor;
+            this.dateFechaInicio.Cursor = _customHandCursor;
+
+
             List<Usuario> nombres = new CN_Usuario().listar();
             foreach (Usuario item in nombres)
             {
