@@ -9,7 +9,7 @@ This is the menu windows form view to select the different options of submenu.
 
 
 This is the user windows form view to make the CRUD operations.
-![Screenshot of menu user active](https://github.com/johnnydldev/Sistema_Punto_Venta/blob/design/screenshots/menu_option_user_active.png)
+![Screenshot of menu user active]()
 
 
 This is the sales reports windows form view to do consults and export data.
