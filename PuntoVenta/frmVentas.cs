@@ -334,7 +334,7 @@ namespace PuntoVenta
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            filaSeleccion = Convert.ToInt32(dgvUserData.SelectedRows.Count);
+            filaSeleccion = dgvUserData.SelectedRows.Count;
 
             if (filaSeleccion > 0)
             {
@@ -369,12 +369,12 @@ namespace PuntoVenta
 
         private void dgvUserData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            filaSeleccionada = Convert.ToInt32(dgvUserData.CurrentCell.RowIndex);
+            filaSeleccionada = dgvUserData.CurrentCell.RowIndex;
         }
 
         private void dgvUserData_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            filaSeleccionada = Convert.ToInt32(dgvUserData.CurrentCell.RowIndex);
+            filaSeleccionada = dgvUserData.CurrentCell.RowIndex;
         }
 
         private void txtPago_KeyPress(object sender, KeyPressEventArgs e)

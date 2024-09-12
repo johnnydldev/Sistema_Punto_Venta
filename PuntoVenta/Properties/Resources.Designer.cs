@@ -103,9 +103,49 @@ namespace PuntoVenta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow {
+            get {
+                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow1 {
+            get {
+                object obj = ResourceManager.GetObject("back_arrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap borrar {
             get {
                 object obj = ResourceManager.GetObject("borrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buscar {
+            get {
+                object obj = ResourceManager.GetObject("buscar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +273,36 @@ namespace PuntoVenta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descargar {
+            get {
+                object obj = ResourceManager.GetObject("descargar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descargar_pdf {
+            get {
+                object obj = ResourceManager.GetObject("descargar_pdf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit {
+            get {
+                object obj = ResourceManager.GetObject("edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye {
             get {
                 object obj = ResourceManager.GetObject("eye", resourceCulture);
@@ -263,6 +333,16 @@ namespace PuntoVenta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap guardar {
+            get {
+                object obj = ResourceManager.GetObject("guardar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hide_24 {
             get {
                 object obj = ResourceManager.GetObject("hide_24", resourceCulture);
@@ -276,6 +356,16 @@ namespace PuntoVenta.Properties {
         internal static System.Drawing.Bitmap hide_32 {
             get {
                 object obj = ResourceManager.GetObject("hide_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info {
+            get {
+                object obj = ResourceManager.GetObject("info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +416,16 @@ namespace PuntoVenta.Properties {
         internal static System.Drawing.Bitmap lapiz_ {
             get {
                 object obj = ResourceManager.GetObject("lapiz_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap limpiar {
+            get {
+                object obj = ResourceManager.GetObject("limpiar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -480,6 +580,16 @@ namespace PuntoVenta.Properties {
         internal static System.Drawing.Bitmap provider_64 {
             get {
                 object obj = ResourceManager.GetObject("provider_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qr_scan {
+            get {
+                object obj = ResourceManager.GetObject("qr_scan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -697,6 +807,16 @@ namespace PuntoVenta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap subir {
+            get {
+                object obj = ResourceManager.GetObject("subir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap supplier_128 {
             get {
                 object obj = ResourceManager.GetObject("supplier_128", resourceCulture);
@@ -740,6 +860,16 @@ namespace PuntoVenta.Properties {
         internal static System.Drawing.Bitmap type_cursor {
             get {
                 object obj = ResourceManager.GetObject("type_cursor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap update {
+            get {
+                object obj = ResourceManager.GetObject("update", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

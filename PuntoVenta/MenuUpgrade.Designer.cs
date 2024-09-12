@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Windows.Forms;
 
 namespace PuntoVenta
 {
@@ -148,14 +149,14 @@ namespace PuntoVenta
             // RegistrarVentas
             // 
             this.RegistrarVentas.Name = "RegistrarVentas";
-            this.RegistrarVentas.Size = new System.Drawing.Size(253, 40);
+            this.RegistrarVentas.Size = new System.Drawing.Size(270, 40);
             this.RegistrarVentas.Text = "Registrar";
             this.RegistrarVentas.Click += new System.EventHandler(this.RegistrarVentas_Click);
             // 
             // verDetallesVenta
             // 
             this.verDetallesVenta.Name = "verDetallesVenta";
-            this.verDetallesVenta.Size = new System.Drawing.Size(253, 40);
+            this.verDetallesVenta.Size = new System.Drawing.Size(270, 40);
             this.verDetallesVenta.Text = "Ver Detalles";
             this.verDetallesVenta.Click += new System.EventHandler(this.verDetallesVenta_Click);
             // 
@@ -362,11 +363,14 @@ namespace PuntoVenta
             // 
             // formContainer
             // 
+            this.formContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.formContainer.BackColor = System.Drawing.Color.Transparent;
             this.formContainer.Location = new System.Drawing.Point(1, 281);
             this.formContainer.Name = "formContainer";
             this.formContainer.Size = new System.Drawing.Size(270, 142);
             this.formContainer.TabIndex = 1;
+            this.formContainer.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scrollFormContainer);
             // 
             // MenuUpgrade
             // 

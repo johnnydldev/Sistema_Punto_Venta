@@ -11,27 +11,52 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaEntidad;
 using CapaNegocio;
+using System.Runtime.InteropServices;
 
 namespace PuntoVenta
 {
     public partial class frmLogin : Form
     {
+        //Elements to do moveable the form.
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int LPAR);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        const int WM_NCLBUTTONDOWN = 0xA1;
+        const int HT_CAPTION = 0x2;
+
         public frmLogin()
         {
             InitializeComponent();
         }
 
+        private void cleanComponents()
+        {
+            lblErrorLogin.Visible = false;
+            lblErrorNickname.Text = "";
+            lblErrorNickname.Visible = false;
+            lblErrorPass.Text = "";
+            lblErrorPass.Visible = false;
+            txtUserName.BackColor = Color.White;
+            txtPassword.BackColor = Color.White;
+
+        }
         private void validarCasillas()
         {
-            if(txtUserName.Text == "")
+            cleanComponents();
+
+            if (txtUserName.Text == "")
             {
-                MessageBox.Show("!!!LA CASILLA DE NOMBRE DE USUARIO O NICKNAME, NO PUEDE ESTAR VACIA!!!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUserName.BackColor = Color.MistyRose;
+                lblErrorNickname.Text = "La casilla de nombre de usuario o nickname, no puede estar vacia.";
+                lblErrorNickname.Visible = true;
             }
             else if (txtPassword.Text == "")
             {
-                MessageBox.Show("!!!LA CASILLA DE CONTRASEÑA, NO PUEDE ESTAR VACIA!!!", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPassword.BackColor = Color.MistyRose;
+                lblErrorPass.Text = "La casilla de contraseña, no puede estar vacia.";
+                lblErrorPass.Visible = true;
             }
             else
             {
@@ -55,8 +80,12 @@ namespace PuntoVenta
             }
             else
             {
-                txtPassword.Text = "";
-                MessageBox.Show("!!!NO SE ENCONTRÓ EL USUARIO!!!\n\nUsuario o Contraseña incorrectos, verifque la información.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPassword.Select();
+                lblErrorLogin.Text = "Usuario o contraseña incorrectos.";
+                lblErrorLogin.Visible = true;
+                lblErrorPass.Text = "Verifque la información.";
+                lblErrorPass.Visible = true;
+                
             }
 
         }
@@ -80,7 +109,7 @@ namespace PuntoVenta
         {
             txtUserName.Text = "";
             txtPassword.Text = "";
-
+            cleanComponents();
             this.Show();
 
         }
@@ -104,6 +133,9 @@ namespace PuntoVenta
             btnShowPass.Cursor = _customHandCursor;
             btnExit.Cursor = _customHandCursor;
             btnHide.Cursor = _customHandCursor;
+            this.picNicknameInfo.Cursor = _customHandCursor;
+            this.picPassInfo.Cursor = _customHandCursor;
+            this.picEnterInfo.Cursor = _customHandCursor;
 
             this.btnSalir.Enabled = false;
             this.btnSalir.Visible = false;
@@ -112,6 +144,10 @@ namespace PuntoVenta
             btnShowPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 
             txtPassword.UseSystemPasswordChar = true;
+            lblErrorLogin.Visible = false;
+            lblErrorPass.Visible = false;
+            lblErrorNickname.Visible = false;
+
         }
 
         private void txtUserName_KeyDown(object sender, KeyEventArgs e)
@@ -177,5 +213,56 @@ namespace PuntoVenta
         {
             this.btnHide.BackColor = Color.Transparent;
         }
+
+        private void Move_Form(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }//End move form event.
+
+        private void ShowToolTip(object sender, string message, PictureBox infoImg)
+        {
+            new System.Windows.Forms.ToolTip().Show(message, infoImg, 30, 0, 2000);
+        }//Pop up message method end.
+
+        private void fitMessage(EventArgs e, string message, PictureBox infoImg)
+        {
+            PictureBox info = infoImg;
+
+            ShowToolTip(e, message, infoImg);
+        }//Called and atributes pass to showToolTip method end.
+
+        private void btnShowPass_MouseHover(object sender, EventArgs e)
+        {
+            string mensaje = "Muestra u oculta la contraseña.";
+
+            fitMessage(e, mensaje, btnShowPass);
+        }//End show pass hover event
+
+        private void picNicknameInfo_MouseHover(object sender, EventArgs e)
+        {
+            string mensaje = "Es el apodo registrado para acceso del usuario.";
+
+            fitMessage(e, mensaje, picNicknameInfo);
+        }//End txt nickname hover event
+
+        private void picPassInfo_MouseHover(object sender, EventArgs e)
+        {
+            string mensaje = "Es la contraseña registrada para el acceso del usuario.";
+
+            fitMessage(e, mensaje, picPassInfo);
+        }//End txt pass hover event
+
+        private void picEnterInfo_MouseHover(object sender, EventArgs e)
+        {
+            string mensaje = "Al dar clic o hacer enter.\n" +
+                "comprueba las credenciales de acceso.";
+
+            fitMessage(e, mensaje, picEnterInfo);
+        }//End btn enter hover event
+
     }//End class
 }//End namespace

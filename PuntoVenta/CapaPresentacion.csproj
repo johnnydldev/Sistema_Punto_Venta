@@ -154,10 +154,22 @@
     <Compile Include="frmReporteVenta_Usuario.Designer.cs">
       <DependentUpon>frmReporteVenta_Usuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUsuarios.cs">
+    <Compile Include="Usuarios\frmEditUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUsuarios.Designer.cs">
+    <Compile Include="Usuarios\frmEditUser.Designer.cs">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\frmUsuarios.Designer.cs">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVentas.cs">
@@ -262,7 +274,13 @@
     <EmbeddedResource Include="frmReporteVenta_Usuario.resx">
       <DependentUpon>frmReporteVenta_Usuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUsuarios.resx">
+    <EmbeddedResource Include="Usuarios\frmEditUser.resx">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentas.resx">
@@ -326,13 +344,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\delete.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\check.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lapiz_.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ClosedXML">
@@ -356,6 +368,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\back_arrow.png" />
+    <None Include="Resources\back-arrow.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\subir.png" />
+    <None Include="Resources\qr-scan.png" />
+    <None Include="Resources\limpiar.png" />
+    <None Include="Resources\lapiz_.png" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\descargar_pdf.png" />
+    <None Include="Resources\descargar.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\add.png" />
     <None Include="Resources\type_cursor.png" />
     <None Include="Resources\sleep.png" />
     <None Include="Resources\minus-sign.png" />

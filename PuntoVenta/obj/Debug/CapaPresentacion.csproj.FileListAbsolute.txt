@@ -185,3 +185,5 @@ C:\Users\JohnnyDL\Documents\Proyectos C#\Punto de venta\SistemaDeVenta_V_1.1.4\S
 C:\Users\JohnnyDL\Documents\Proyectos C#\Punto de venta\SistemaDeVenta_V_1.1.4\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.exe
 C:\Users\JohnnyDL\Documents\Proyectos C#\Punto de venta\SistemaDeVenta_V_1.1.4\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVentaAppvance.pdb
 C:\Users\JohnnyDL\Documents\Proyectos C#\Punto de venta\SistemaDeVenta_V_1.1.4\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.MenuUpgrade.resources
+C:\Users\JohnnyDL\Documents\Proyectos C#\Punto de venta\SistemaDeVenta_V_1.1.4\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Usuarios.frmEditUser.resources
+C:\Users\JohnnyDL\Documents\Proyectos C#\Punto de venta\SistemaDeVenta_V_1.1.4\SistemaDeVenta\PuntoVenta\obj\Debug\PuntoVenta.Usuarios.frmAddUser.resources

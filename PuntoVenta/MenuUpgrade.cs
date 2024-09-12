@@ -17,6 +17,7 @@ namespace PuntoVenta
    
     public partial class MenuUpgrade : Form
     {
+
         //Elements to do moveable the form.
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int LPAR);
@@ -25,6 +26,16 @@ namespace PuntoVenta
 
         const int WM_NCLBUTTONDOWN = 0xA1;
         const int HT_CAPTION = 0x2;
+
+        private System.Windows.Forms.Cursor _customCutCursor =
+               new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
+
+        private System.Windows.Forms.Cursor _customCaretCursor =
+             new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
+
+        private System.Windows.Forms.Cursor _customHandCursor =
+             new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
+
 
         //Elements to do round the form borders.
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -53,20 +64,13 @@ namespace PuntoVenta
 
         private void MenuUpgrade_Load(object sender, EventArgs e)
         {
-            System.Windows.Forms.Cursor _customCutCursor =
-                 new System.Windows.Forms.Cursor(Properties.Resources.cursor.GetHicon());
-
-            System.Windows.Forms.Cursor _customCaretCursor =
-                 new System.Windows.Forms.Cursor(Properties.Resources.type_cursor.GetHicon());
-
-            System.Windows.Forms.Cursor _customHandCursor =
-                 new System.Windows.Forms.Cursor(Properties.Resources.decree_cursor.GetHicon());
-
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.formContainer.AutoScroll = true;
+           
             this.Cursor = _customCutCursor;
             this.menuPrincipal.Cursor = _customHandCursor;
             this.btnHide.Cursor = _customHandCursor;
             this.btnExit.Cursor = _customHandCursor;
-
             this.FormBorderStyle = FormBorderStyle.None;
 
             //Create and asing the color for hover menu items.
@@ -100,7 +104,7 @@ namespace PuntoVenta
             //this.lblProof.Location = new System.Drawing.Point(5, 40);
             this.menuPrincipal.Location = new Point(0, 0);
 
-            this.formContainer.Size = new Size(this.Width - 1, Convert.ToInt32(this.Height / 1.29F));
+            this.formContainer.Size = new Size(this.Width - 1, Convert.ToInt32(this.Height / 1.24F));
             this.formContainer.Location = new System.Drawing.Point(0, this.menuContainer.Height + 10);
             this.MaximizeBox = false;
             this.ResizeRedraw = false;
@@ -108,8 +112,12 @@ namespace PuntoVenta
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
         }//End Load
 
-        private void AbrirFormulario(ToolStripMenuItem menu, Form formulario)
+        
+        public void AbrirFormulario(ToolStripMenuItem menu, Form formulario)
         {
+
+            Point areaContainer = new Point((this.Width - formContainer.Width)*180, (this.Height - formContainer.Height) / 20);
+
             if (menuActivo != null)
             {
                 menuActivo.BackColor = Color.LightSeaGreen;
@@ -125,9 +133,7 @@ namespace PuntoVenta
             formularioActivo = formulario;
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.SteelBlue;
-
+            formulario.Location = areaContainer;
             formContainer.Controls.Add(formulario);
             formulario.Show();
         }//End open form
@@ -243,6 +249,14 @@ namespace PuntoVenta
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }//End move form event.
+
+        private void scrollFormContainer(object sender, ScrollEventArgs e)
+        {
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer 
+                | ControlStyles.UserPaint
+                | ControlStyles.AllPaintingInWmPaint, true);
+        }
+
 
     }//End class
 
